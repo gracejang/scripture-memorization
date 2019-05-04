@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/scriptureLabel"
+        android:text="Scripture: 1 Thessalonians 5:16-17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/scripture"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scripture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rejoice always pray without ceasing"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@id/scriptureLabel"
+        app:layout_constraintLeft_toLeftOf="@id/scriptureLabel"
+        app:layout_constraintRight_toRightOf="@id/scriptureLabel"
+         />
+
+    <Button
+        android:id="@+id/micButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test memory"
+        android:backgroundTint="#3A4570"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/scripture"
+        app:layout_constraintLeft_toLeftOf="@id/scripture"
+        app:layout_constraintRight_toRightOf="@id/scripture"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        tools:text="Rejoice always pray continually"
+        app:layout_constraintTop_toBottomOf="@id/micButton"
+        app:layout_constraintLeft_toLeftOf="@id/scripture"
+        app:layout_constraintRight_toRightOf="@id/scripture"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
